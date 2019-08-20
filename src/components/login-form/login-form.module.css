@@ -1,0 +1,10 @@
+.header_login_autorization {
+    font-size: 14px;
+    color: #8c8c8c;
+}
+
+.header_login_enter::after {
+    content: '/';
+    margin-left: 8px;
+    margin-right: 5px;
+}

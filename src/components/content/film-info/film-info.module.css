@@ -1,0 +1,12 @@
+h1.content_item_title {
+    font-size: 5em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+span.content_item_title_togle {
+    color: #e50914;
+}
+p.content_item_descr {
+    font-size: 14px;
+    line-height: 1.929;
+}

@@ -1,0 +1,10 @@
+span.film_data_descr_text {
+    color: #e50914;
+    display: block;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.film_content_detail_text {
+    margin-bottom: 20px;
+}

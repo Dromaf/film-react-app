@@ -1,0 +1,18 @@
+
+.content_item_info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.slam:after {
+    content: '|';
+    margin: 20px;
+}
+
+.content_item_info_rating_img {
+    vertical-align: top;
+    margin-right: 14px;
+}

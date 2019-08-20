@@ -1,0 +1,35 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background-color: #fff;
+    color: #fff;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#container {
+    background: url(../app/img/bg-fon.jpg) no-repeat top center;
+    background-color: rgb(0, 0, 0);
+}
+
+.wrapper {
+    max-width: 1700px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+#header .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 87px 15px 87px 15px;
+}
+
+#content .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

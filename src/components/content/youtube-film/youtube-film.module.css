@@ -1,0 +1,5 @@
+.film_video_content_youtube {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

@@ -1,0 +1,19 @@
+span.meta_data {
+    color: #e50914;
+    font-weight: bold;
+    display: block;
+    text-transform: uppercase;
+}
+
+.film_content_detail_info {
+    margin-top: 20px;
+}
+
+.film_content_detail_meta {
+    margin-bottom: 20px;
+}
+.film_content_detail_film_info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}

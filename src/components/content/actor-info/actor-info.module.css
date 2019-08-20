@@ -1,0 +1,9 @@
+h4.actor_content_title {
+    margin-top: 40px;
+}
+
+.actor_content_container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
