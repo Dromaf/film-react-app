@@ -5,6 +5,8 @@ import Content from "../content/content";
 import LoginForm from "../login-form/login-form";
 import "normalize.css";
 import "./app.css";
+import Registration from "../login-form/registration/registration";
+import Autorization from "../login-form/autorization/autorization";
 
 const App = () => {
   return (
@@ -13,13 +15,14 @@ const App = () => {
         <div class="wrapper">
           <Header />
           <LoginForm />
-         
         </div>
         <Menu />
       </header>
-      
-          <Content />
-     
+      <Content />
+     {/*<div>
+        <Registration />
+        <Autorization />
+      </div>*/}
     </div>
   );
 };
