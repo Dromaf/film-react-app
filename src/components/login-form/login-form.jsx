@@ -1,11 +1,12 @@
 import React from 'react';
 import s from './login-form.module.css';
+import {NavLink} from "react-router-dom";
 
 const LoginForm = () => {
     return (
         <div className={s.header_login}>
-            <a href="/1" className={s.header_login_enter}>Вход</a>
-            <a href="/1" className={s.header_login_autorization}>Регистрация</a>
+            <NavLink to="/authorization"  className={s.header_login_enter}>Вход</NavLink>
+            <NavLink to="/registration"className={s.header_login_authorization}>Регистрация</NavLink>
         </div>
     )
 };

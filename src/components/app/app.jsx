@@ -1,29 +1,25 @@
 import React from "react";
 import Header from "../header/header";
-import Menu from "../menu/menu";
 import Content from "../content/content";
-import LoginForm from "../login-form/login-form";
+import Home from "../home/home";
 import "normalize.css";
 import "./app.css";
 import Registration from "../login-form/registration/registration";
-import Autorization from "../login-form/autorization/autorization";
+import Authorization from "../login-form/authorization/authorization";
+import { BrowserRouter, Route } from "react-router-dom";
 
 const App = () => {
   return (
-    <div id="container">
-      <header id="header">
-        <div class="wrapper">
-          <Header />
-          <LoginForm />
-        </div>
-        <Menu />
-      </header>
-      <Content />
-     {/*<div>
-        <Registration />
-        <Autorization />
-      </div>*/}
-    </div>
+    <BrowserRouter>
+      <div id="container">
+        <Header />
+        <Route exact path='/' component={Home} />
+        <Route path="/info" component={Content} />
+        <Route path="/authorization" component={Authorization} />
+        <Route path="/registration" component={Registration} />
+        
+      </div>
+    </BrowserRouter>
   );
 };
 
