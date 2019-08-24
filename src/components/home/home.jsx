@@ -1,272 +1,61 @@
 import React from "react";
 import s from "./home.module.css";
+import Slider from './NetflixSlider'
+import MovieCard from "./movie-card/movie-card";
+
+const movies = [
+  {
+    id: 1,
+    image: '/images/slide1.jpg',
+    imageBg: '/images/slide1b.webp',
+    title: '1983'
+  },
+  {
+    id: 2,
+    image: '/images/slide2.jpg',
+    imageBg: '/images/slide2b.webp',
+    title: 'Russian doll'
+  },
+  {
+    id: 3,
+    image: '/images/slide3.jpg',
+    imageBg: '/images/slide3b.webp',
+    title: 'The rain',
+  },
+  {
+    id: 4,
+    image: '/images/slide4.jpg',
+    imageBg: '/images/slide4b.webp',
+    title: 'Sex education'
+  },
+  {
+    id: 5,
+    image: '/images/slide5.jpg',
+    imageBg: '/images/slide5b.webp',
+    title: 'Elite'
+  },
+  {
+    id: 6,
+    image: '/images/slide6.jpg',
+    imageBg: '/images/slide6b.webp',
+    title: 'Black mirror'
+  }
+];
 
 const Home = () => {
   return (
+
     <section id="content">
-      <div className="wrapper"> 
-        <div className={s.card}>
-        <a href="/">
-          <div className={s.poster}>
-            <img src="https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/1/11/Avengers_Infinity_war_poster.jpeg/revision/latest/scale-to-width-down/324?cb=20180316141550" />
-          </div>
-          <div className={s.details}>
-            <h2>Avengers Infinity War (2018)</h2>
-            <div className={s.tags}>
-              <span className={s.fantasy}>Fantasy</span>
-              <span className={s.scifi}>Sci Fi</span>
-            </div>
-
-            <div className={s.info}>
-              <p>
-                Iron Man, Thor, the Hulk and the rest of the Avengers unite to
-                battle their most powerful enemy yet
-              </p>
-            </div>
-
-            <div className={s.star}>
-              <h4>Cast</h4>
-              <ul>
-                <li>
-                  <img src="https://www.famousbirthdays.com/headshots/robert-downey-jr-2.jpg" />
-                </li>
-                <li>
-                  <img src="https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTU1MTM0NzA2NzQ3MTg4NDQw/chris-evans-arrives-at-the-los-angeles-premiere-of-captain-america-the-winter-soldier-held-at-the-el-capitan-theatre-on-march-13-2014-in-hollywood-california-photo-by-michael-tran_filmmagicjpg-square.jpg" />
-                </li>
-                <li>
-                  <img src="https://www.india-forums.com/images/celebrity/l_12804.jpg" />
-                </li>
-                <li>
-                  <img src="https://imageresizer.static9.net.au/LYRtJfSVUFCURsyAlx6qdMXJzwI=/400x0/http%3A%2F%2Fprod.static9.net.au%2F_%2Fmedia%2FNetwork%2FImages%2Favengers300616Scarjo.jpg" />
-                </li>
-                <li>
-                  <img src="https://www.famousbirthdays.com/faces/boseman-chadwick-image.jpg" />
-                </li>
-              </ul>
-            </div>
-          </div>
-          </a>
-        </div>
-       
-        <div className={s.card}>
-        <a href="/">
-          <div className={s.poster}>
-            <img src="https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/1/11/Avengers_Infinity_war_poster.jpeg/revision/latest/scale-to-width-down/324?cb=20180316141550" />
-          </div>
-          <div className={s.details}>
-            <h2>Avengers Infinity War (2018)</h2>
-            <div className={s.tags}>
-              <span className={s.fantasy}>Fantasy</span>
-              <span className={s.scifi}>Sci Fi</span>
-            </div>
-
-            <div className={s.info}>
-              <p>
-                Iron Man, Thor, the Hulk and the rest of the Avengers unite to
-                battle their most powerful enemy yet
-              </p>
-            </div>
-
-            <div className={s.star}>
-              <h4>Cast</h4>
-              <ul>
-                <li>
-                  <img src="https://www.famousbirthdays.com/headshots/robert-downey-jr-2.jpg" />
-                </li>
-                <li>
-                  <img src="https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTU1MTM0NzA2NzQ3MTg4NDQw/chris-evans-arrives-at-the-los-angeles-premiere-of-captain-america-the-winter-soldier-held-at-the-el-capitan-theatre-on-march-13-2014-in-hollywood-california-photo-by-michael-tran_filmmagicjpg-square.jpg" />
-                </li>
-                <li>
-                  <img src="https://www.india-forums.com/images/celebrity/l_12804.jpg" />
-                </li>
-                <li>
-                  <img src="https://imageresizer.static9.net.au/LYRtJfSVUFCURsyAlx6qdMXJzwI=/400x0/http%3A%2F%2Fprod.static9.net.au%2F_%2Fmedia%2FNetwork%2FImages%2Favengers300616Scarjo.jpg" />
-                </li>
-                <li>
-                  <img src="https://www.famousbirthdays.com/faces/boseman-chadwick-image.jpg" />
-                </li>
-              </ul>
-            </div>
-          </div>
-          </a>
-        </div>
-
-
-        <div className={s.card}>
-        <a href="/">
-          <div className={s.poster}>
-            <img src="https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/1/11/Avengers_Infinity_war_poster.jpeg/revision/latest/scale-to-width-down/324?cb=20180316141550" />
-          </div>
-          <div className={s.details}>
-            <h2>Avengers Infinity War (2018)</h2>
-            <div className={s.tags}>
-              <span className={s.fantasy}>Fantasy</span>
-              <span className={s.scifi}>Sci Fi</span>
-            </div>
-
-            <div className={s.info}>
-              <p>
-                Iron Man, Thor, the Hulk and the rest of the Avengers unite to
-                battle their most powerful enemy yet
-              </p>
-            </div>
-
-            <div className={s.star}>
-              <h4>Cast</h4>
-              <ul>
-                <li>
-                  <img src="https://www.famousbirthdays.com/headshots/robert-downey-jr-2.jpg" />
-                </li>
-                <li>
-                  <img src="https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTU1MTM0NzA2NzQ3MTg4NDQw/chris-evans-arrives-at-the-los-angeles-premiere-of-captain-america-the-winter-soldier-held-at-the-el-capitan-theatre-on-march-13-2014-in-hollywood-california-photo-by-michael-tran_filmmagicjpg-square.jpg" />
-                </li>
-                <li>
-                  <img src="https://www.india-forums.com/images/celebrity/l_12804.jpg" />
-                </li>
-                <li>
-                  <img src="https://imageresizer.static9.net.au/LYRtJfSVUFCURsyAlx6qdMXJzwI=/400x0/http%3A%2F%2Fprod.static9.net.au%2F_%2Fmedia%2FNetwork%2FImages%2Favengers300616Scarjo.jpg" />
-                </li>
-                <li>
-                  <img src="https://www.famousbirthdays.com/faces/boseman-chadwick-image.jpg" />
-                </li>
-              </ul>
-            </div>
-          </div>
-          </a>
-        </div>
-
-
-        <div className={s.card}>
-        <a href="/">
-          <div className={s.poster}>
-            <img src="https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/1/11/Avengers_Infinity_war_poster.jpeg/revision/latest/scale-to-width-down/324?cb=20180316141550" />
-          </div>
-          <div className={s.details}>
-            <h2>Avengers Infinity War (2018)</h2>
-            <div className={s.tags}>
-              <span className={s.fantasy}>Fantasy</span>
-              <span className={s.scifi}>Sci Fi</span>
-            </div>
-
-            <div className={s.info}>
-              <p>
-                Iron Man, Thor, the Hulk and the rest of the Avengers unite to
-                battle their most powerful enemy yet
-              </p>
-            </div>
-
-            <div className={s.star}>
-              <h4>Cast</h4>
-              <ul>
-                <li>
-                  <img src="https://www.famousbirthdays.com/headshots/robert-downey-jr-2.jpg" />
-                </li>
-                <li>
-                  <img src="https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTU1MTM0NzA2NzQ3MTg4NDQw/chris-evans-arrives-at-the-los-angeles-premiere-of-captain-america-the-winter-soldier-held-at-the-el-capitan-theatre-on-march-13-2014-in-hollywood-california-photo-by-michael-tran_filmmagicjpg-square.jpg" />
-                </li>
-                <li>
-                  <img src="https://www.india-forums.com/images/celebrity/l_12804.jpg" />
-                </li>
-                <li>
-                  <img src="https://imageresizer.static9.net.au/LYRtJfSVUFCURsyAlx6qdMXJzwI=/400x0/http%3A%2F%2Fprod.static9.net.au%2F_%2Fmedia%2FNetwork%2FImages%2Favengers300616Scarjo.jpg" />
-                </li>
-                <li>
-                  <img src="https://www.famousbirthdays.com/faces/boseman-chadwick-image.jpg" />
-                </li>
-              </ul>
-            </div>
-          </div>
-          </a>
-        </div>
-
-        <div className={s.card}>
-        <a href="/">
-          <div className={s.poster}>
-            <img src="https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/1/11/Avengers_Infinity_war_poster.jpeg/revision/latest/scale-to-width-down/324?cb=20180316141550" />
-          </div>
-          <div className={s.details}>
-            <h2>Avengers Infinity War (2018)</h2>
-            <div className={s.tags}>
-              <span className={s.fantasy}>Fantasy</span>
-              <span className={s.scifi}>Sci Fi</span>
-            </div>
-
-            <div className={s.info}>
-              <p>
-                Iron Man, Thor, the Hulk and the rest of the Avengers unite to
-                battle their most powerful enemy yet
-              </p>
-            </div>
-
-            <div className={s.star}>
-              <h4>Cast</h4>
-              <ul>
-                <li>
-                  <img src="https://www.famousbirthdays.com/headshots/robert-downey-jr-2.jpg" />
-                </li>
-                <li>
-                  <img src="https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTU1MTM0NzA2NzQ3MTg4NDQw/chris-evans-arrives-at-the-los-angeles-premiere-of-captain-america-the-winter-soldier-held-at-the-el-capitan-theatre-on-march-13-2014-in-hollywood-california-photo-by-michael-tran_filmmagicjpg-square.jpg" />
-                </li>
-                <li>
-                  <img src="https://www.india-forums.com/images/celebrity/l_12804.jpg" />
-                </li>
-                <li>
-                  <img src="https://imageresizer.static9.net.au/LYRtJfSVUFCURsyAlx6qdMXJzwI=/400x0/http%3A%2F%2Fprod.static9.net.au%2F_%2Fmedia%2FNetwork%2FImages%2Favengers300616Scarjo.jpg" />
-                </li>
-                <li>
-                  <img src="https://www.famousbirthdays.com/faces/boseman-chadwick-image.jpg" />
-                </li>
-              </ul>
-            </div>
-          </div>
-          </a>
-        </div>
-
-        <div className={s.card}>
-        <a href="/">
-          <div className={s.poster}>
-            <img src="https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/1/11/Avengers_Infinity_war_poster.jpeg/revision/latest/scale-to-width-down/324?cb=20180316141550" />
-          </div>
-          <div className={s.details}>
-            <h2>Avengers Infinity War (2018)</h2>
-            <div className={s.tags}>
-              <span className={s.fantasy}>Fantasy</span>
-              <span className={s.scifi}>Sci Fi</span>
-            </div>
-
-            <div className={s.info}>
-              <p>
-                Iron Man, Thor, the Hulk and the rest of the Avengers unite to
-                battle their most powerful enemy yet
-              </p>
-            </div>
-
-            <div className={s.star}>
-              <h4>Cast</h4>
-              <ul>
-                <li>
-                  <img src="https://www.famousbirthdays.com/headshots/robert-downey-jr-2.jpg" />
-                </li>
-                <li>
-                  <img src="https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTU1MTM0NzA2NzQ3MTg4NDQw/chris-evans-arrives-at-the-los-angeles-premiere-of-captain-america-the-winter-soldier-held-at-the-el-capitan-theatre-on-march-13-2014-in-hollywood-california-photo-by-michael-tran_filmmagicjpg-square.jpg" />
-                </li>
-                <li>
-                  <img src="https://www.india-forums.com/images/celebrity/l_12804.jpg" />
-                </li>
-                <li>
-                  <img src="https://imageresizer.static9.net.au/LYRtJfSVUFCURsyAlx6qdMXJzwI=/400x0/http%3A%2F%2Fprod.static9.net.au%2F_%2Fmedia%2FNetwork%2FImages%2Favengers300616Scarjo.jpg" />
-                </li>
-                <li>
-                  <img src="https://www.famousbirthdays.com/faces/boseman-chadwick-image.jpg" />
-                </li>
-              </ul>
-            </div>
-          </div>
-          </a>
-        </div>
-
-
+      <div className="wrapper">
+      
+      <MovieCard />
+     
       </div>
+      <Slider>
+          {movies.map(movie => (
+            <Slider.Item movie={movie} key={movie.id}>item1</Slider.Item>
+          ))}
+      </Slider>
     </section>
   );
 };
