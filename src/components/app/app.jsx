@@ -8,13 +8,17 @@ import Registration from "../login-form/registration/registration";
 import Authorization from "../login-form/authorization/authorization";
 import { BrowserRouter, Route } from "react-router-dom";
 
-const App = () => {
+
+
+
+const App = (props) => {
+  
   return (
     <BrowserRouter>
       <div id="container">
         <Header />
-        <Route exact path='/' component={Home} />
-        <Route path="/info" component={Content} />
+        <Route exact path='/' render={ () => <Home movies={props.movies} moviesBd={props.moviesBd}/> }  />
+        <Route path="/info" render={ () => <Content moviesBd={props.moviesBd}/> } />
         <Route path="/authorization" component={Authorization} />
         <Route path="/registration" component={Registration} />
         
