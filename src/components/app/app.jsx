@@ -22,6 +22,9 @@ const App = (props) => {
         <Route path="/authorization" component={Authorization} />
         <Route path="/registration" component={Registration} />
         
+        
+
+
       </div>
     </BrowserRouter>
   );

@@ -1,5 +1,4 @@
 import React from "react";
-import s from "./home.module.css";
 import Slider from './NetflixSlider'
 import MovieCard from "./movie-card/movie-card";
 

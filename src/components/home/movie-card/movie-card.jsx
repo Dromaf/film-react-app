@@ -4,7 +4,7 @@ import s from "./movie-card.module.css";
 const MovieCard = (props) => {
   return (
     <div className={s.card} key={props.id}>
-      <a href="/">
+      <a href="info/">
         <div className={s.poster}>
           <img src={props.image} />
         </div>

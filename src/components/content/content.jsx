@@ -9,7 +9,8 @@ import ProducerInfo from "./producer-info/producer-info";
 import FilmDescription from "./film-description/film-description";
 import YoutubeFilm from "./youtube-film/youtube-film";
 
-const Content = () => {
+const Content = (props) => {
+ 
   return (
     <div>
       <section id="content">
@@ -23,7 +24,7 @@ const Content = () => {
         </div>
       </section>
         <ProducerInfo />
-        <ActorInfo />
+        <ActorInfo  moviesBd={props.moviesBd} />
         <FilmDescription />
         <YoutubeFilm />
     </div>
