@@ -5,10 +5,10 @@ import ShowDetailsButton from './ShowDetailsButton'
 import Mark from './Mark'
 import './Item.scss'
 
-const Item = ({ movie }) => (
+const Item = ({ moviesBd }) => (
   <SliderContext.Consumer>
     {({ onSelectSlide, currentSlide, elementRef }) => {
-      const isActive = currentSlide && currentSlide.id === movie.id;
+      const isActive = currentSlide && currentSlide.id === moviesBd.id;
 
       return (
         <div
@@ -17,8 +17,8 @@ const Item = ({ movie }) => (
             'item--open': isActive,
           })}
         >
-          <img src={movie.image} alt="" />
-          <ShowDetailsButton onClick={() => onSelectSlide(movie)} />
+          <img src={moviesBd.imageFon} alt="" />
+          <ShowDetailsButton onClick={() => onSelectSlide(moviesBd)} />
           {isActive && <Mark />}
         </div>
       );

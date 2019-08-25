@@ -2,7 +2,7 @@ import React from "react";
 import logo from "./img/logo.png";
 import Menu from "./menu/menu";
 import LoginForm from "../login-form/login-form";
-import SearchBar from "material-ui-search-bar";
+import Search from "../search/search";
 
 const Header = () => {
   return (
@@ -16,14 +16,7 @@ const Header = () => {
         <LoginForm />
         
       </div>
-      <SearchBar
-        onChange={() => console.log("onChange")}
-        onRequestSearch={() => console.log("onRequestSearch")}
-        style={{
-          margin: "15px auto",
-          maxWidth: 1700
-        }}
-      />
+      <Search />
       </div>
     </header>
     

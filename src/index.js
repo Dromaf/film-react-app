@@ -2,48 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/app/app';
 
-    const movies = [
-      {
-        id: 1,
-        image: '/images/slide1.jpg',
-        imageBg: '/images/slide1b.webp',
-        title: '1983'
-      },
-      {
-        id: 2,
-        image: '/images/slide2.jpg',
-        imageBg: '/images/slide2b.webp',
-        title: 'Russian doll'
-      },
-      {
-        id: 3,
-        image: '/images/slide3.jpg',
-        imageBg: '/images/slide3b.webp',
-        title: 'The rain',
-      },
-      {
-        id: 4,
-        image: '/images/slide4.jpg',
-        imageBg: '/images/slide4b.webp',
-        title: 'Sex education'
-      },
-      {
-        id: 5,
-        image: '/images/slide5.jpg',
-        imageBg: '/images/slide5b.webp',
-        title: 'Elite'
-      },
-      {
-        id: 6,
-        image: '/images/slide6.jpg',
-        imageBg: '/images/slide6b.webp',
-        title: 'Black mirror'
-      }
-    ];
+   
     
     const moviesBd = [
       {
         id: 1,
+        imageFon: 'https://www.soyuz.ru/public/uploads/files/2/7355329/201906112139380d23d05b46.jpg',
+        imageBg: 'https://www.soyuz.ru/public/uploads/files/2/7355329/201906112139380d23d05b46.jpg',
         image: 'https://upload.wikimedia.org/wikipedia/ru/thumb/b/bd/Spider-Man_Far_From_Home_poster.jpg/230px-Spider-Man_Far_From_Home_poster.jpg',
         title: 'Человек-паук: Вдали от дома',
         directed: 'Джон Уоттс',
@@ -77,6 +42,8 @@ import App from './components/app/app';
       },
       {
         id: 2,
+        imageFon: 'https://storage1.censor.net/images/b/4/4/7/b4475c2c6c3406b517d9086a94294433/original.jpg',
+        imageBg: 'https://storage1.censor.net/images/b/4/4/7/b4475c2c6c3406b517d9086a94294433/original.jpg',
         image: 'https://upload.wikimedia.org/wikipedia/ru/thumb/a/a4/The_Avengers_Endgame_Poster.jpg/267px-The_Avengers_Endgame_Poster.jpg',
         title: 'Мстители: Финал',
         directed: 'Энтони Руссо, Джо Руссо',
@@ -110,6 +77,8 @@ import App from './components/app/app';
       },
       {
         id: 3,
+        imageFon: 'https://playua.net/wp-content/uploads/2019/03/715250b1084a52d56a46e985dd5d90a8.jpg',
+        imageBg: 'https://playua.net/wp-content/uploads/2019/03/715250b1084a52d56a46e985dd5d90a8.jpg',
         image: 'https://upload.wikimedia.org/wikipedia/ru/thumb/0/07/Captain_Marvel_film_logo.jpg/230px-Captain_Marvel_film_logo.jpg',
         title: 'Капитан Марвел',
         directed: 'Анна Боден, Райан Флек',
@@ -143,6 +112,8 @@ import App from './components/app/app';
       },
       {
         id: 4,
+        imageFon: 'https://img.gazeta.ru/files3/905/11750905/mstiteli-pic905-895x505-44281.jpg',
+        imageBg: 'https://img.gazeta.ru/files3/905/11750905/mstiteli-pic905-895x505-44281.jpg',
         image: 'https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/1/11/Avengers_Infinity_war_poster.jpeg/revision/latest/scale-to-width-down/324?cb=20180316141550',
         title: 'Мстители: Война бесконечности',
         directed: 'Энтони Руссо, Джо Руссо',
@@ -176,6 +147,8 @@ import App from './components/app/app';
       },
       {
         id: 5,
+        imageFon: 'https://tvfeed.in/cache/72/38/7238684670c835ebf13d9a4296cf6416.jpg',
+        imageBg: 'https://tvfeed.in/cache/72/38/7238684670c835ebf13d9a4296cf6416.jpg',
         image: 'https://upload.wikimedia.org/wikipedia/ru/thumb/0/04/The_Avengers_Age_of_Ultron_poster.jpg/267px-The_Avengers_Age_of_Ultron_poster.jpg',
         title: 'Мстители: Эра Альтрона',
         directed: 'Джосс Уидон',
@@ -211,4 +184,4 @@ import App from './components/app/app';
     ];
     
 
-ReactDOM.render(<App  moviesBd={moviesBd}  movies={movies} />, document.getElementById('root'));
+ReactDOM.render(<App  moviesBd={moviesBd} />, document.getElementById('root'));

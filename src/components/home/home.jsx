@@ -21,8 +21,8 @@ const Home = (props) => {
         ))}
       </div>
       <Slider>
-        {props.movies.map(movie => (
-          <Slider.Item movie={movie} key={movie.id}>
+        {props.moviesBd.map(moviesBd => (
+          <Slider.Item moviesBd={moviesBd} key={moviesBd.id} >
             item1
           </Slider.Item>
         ))}
