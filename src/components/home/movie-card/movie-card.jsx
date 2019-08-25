@@ -1,7 +1,15 @@
 import React from "react";
 import s from "./movie-card.module.css";
 
-const MovieCard = (props) => {
+const MovieCard = props => {
+
+  const actorImg = props.starringImg.map(moviesImg=> (
+    <li><img src={moviesImg} /></li>
+  ))
+  const tags =  props.genre.map(moviesTag => (
+    <span className={s.tags_name}>{moviesTag}</span>
+  ))
+
   return (
     <div className={s.card} key={props.id}>
       <a href="info/">
@@ -10,7 +18,7 @@ const MovieCard = (props) => {
         </div>
         <div className={s.details}>
           <h2>
-          {props.title}
+            {props.title}
             <br />
             <span> {props.juicedBy}</span>
           </h2>
@@ -25,21 +33,17 @@ const MovieCard = (props) => {
           </div>
 
           <div className={s.tags}>
-            <span className={s.tags_name}>{props.genre}</span>
+           {tags}
           </div>
 
           <div className={s.info}>
-            <p>
-            {props.description}
-            </p>
+            <p>{props.description}</p>
           </div>
 
           <div className={s.star}>
             <h4>Актеры</h4>
             <ul>
-              <li>
-                <img src={props.starringImg} />
-              </li>
+             {actorImg}
             </ul>
           </div>
         </div>

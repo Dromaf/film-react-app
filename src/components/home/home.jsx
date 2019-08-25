@@ -16,7 +16,7 @@ const Home = (props) => {
             raiting={moviesBd.raiting}
             genre={moviesBd.genre}
             description={moviesBd.description}
-            starringImg={moviesBd.starringImg[0]}
+            starringImg={moviesBd.starringImg}
           />
         ))}
       </div>

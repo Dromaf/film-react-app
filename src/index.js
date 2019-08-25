@@ -69,7 +69,11 @@ import App from './components/app/app';
         boxOffice: '$1 111 407 071 $',
         raiting:'7.5',
         trailer:'https://www.youtube.com/watch?v=cSqi-8kAMmM',
-        genre:'Фантастика'
+        genre:[
+          'Фантастика',
+          'Боевик',
+          'Приключения'
+        ],
       },
       {
         id: 2,
@@ -98,7 +102,11 @@ import App from './components/app/app';
         boxOffice: '2 795 966 475 $',
         raiting:'7.7',
         trailer:'https://www.youtube.com/watch?v=cSqi-8kAMmM',
-        genre:'Фантастика'
+        genre:[
+          'Фантастика',
+          'Боевик',
+          'Приключения'
+        ],
       },
       {
         id: 3,
@@ -127,7 +135,11 @@ import App from './components/app/app';
         boxOffice: '1 128 274 794 $',
         raiting:'6.5',
         trailer:'https://www.youtube.com/watch?v=cSqi-8kAMmM',
-        genre:'Фантастика'
+        genre:[
+          'Фантастика',
+          'Боевик',
+          'Приключения'
+        ],
       },
       {
         id: 4,
@@ -156,7 +168,11 @@ import App from './components/app/app';
         boxOffice: '1 369 544 272 $',
         raiting:'7.8',
         trailer:'https://www.youtube.com/watch?v=cSqi-8kAMmM',
-        genre:'Фантастика'
+        genre:[
+          'Фантастика',
+          'Боевик',
+          'Приключения'
+        ],
       },
       {
         id: 5,
@@ -185,7 +201,11 @@ import App from './components/app/app';
         boxOffice: '1 405 403 694 $',
         raiting:'7.3',
         trailer:'https://www.youtube.com/watch?v=cSqi-8kAMmM',
-        genre:'Фантастика'
+        genre:[
+          'Фантастика',
+          'Боевик',
+          'Приключения'
+        ],
       }
     
     ];
