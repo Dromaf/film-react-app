@@ -2,11 +2,10 @@ import React from "react";
 import Slider from './NetflixSlider'
 import MovieCard from "./movie-card/movie-card";
 
-
-
 const Home = (props) => {
   return (
     <section id="content">
+         
       <div className="wrapper">
         {props.moviesBd.map(moviesBd => (
           <MovieCard
