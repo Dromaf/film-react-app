@@ -37,7 +37,7 @@ const MovieCard = props => {
           </div>
 
           <div className={s.info}>
-            <p>{props.description}</p>
+            <p className={s.info_text}>{props.description}</p>
           </div>
 
           <div className={s.star}>
