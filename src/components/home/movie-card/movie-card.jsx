@@ -2,13 +2,14 @@ import React from "react";
 import s from "./movie-card.module.css";
 
 const MovieCard = props => {
-
-  const actorImg = props.starringImg.map(moviesImg=> (
-    <li><img src={moviesImg} /></li>
-  ))
-  const tags =  props.genre.map(moviesTag => (
+  const actorImg = props.starringImg.map(moviesImg => (
+    <li>
+      <img src={moviesImg} />
+    </li>
+  ));
+  const tags = props.genre.map(moviesTag => (
     <span className={s.tags_name}>{moviesTag}</span>
-  ))
+  ));
 
   return (
     <div className={s.card} key={props.id}>
@@ -32,9 +33,7 @@ const MovieCard = props => {
             <span>{props.raiting}</span>
           </div>
 
-          <div className={s.tags}>
-           {tags}
-          </div>
+          <div className={s.tags}>{tags}</div>
 
           <div className={s.info}>
             <p className={s.info_text}>{props.description}</p>
@@ -42,9 +41,7 @@ const MovieCard = props => {
 
           <div className={s.star}>
             <h4>Актеры</h4>
-            <ul>
-             {actorImg}
-            </ul>
+            <ul>{actorImg}</ul>
           </div>
         </div>
       </a>
