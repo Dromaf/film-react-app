@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.272a91b6.chunk.css",
-    "main.js": "/static/js/main.e6a9c055.chunk.js",
-    "main.js.map": "/static/js/main.e6a9c055.chunk.js.map",
-    "runtime~main.js": "/static/js/runtime~main.56ed8863.js",
-    "runtime~main.js.map": "/static/js/runtime~main.56ed8863.js.map",
-    "static/css/2.764ccc25.chunk.css": "/static/css/2.764ccc25.chunk.css",
-    "static/js/2.771b1ea6.chunk.js": "/static/js/2.771b1ea6.chunk.js",
-    "static/js/2.771b1ea6.chunk.js.map": "/static/js/2.771b1ea6.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.fa799a76c1605f3f4e49a064ec0bf034.js": "/precache-manifest.fa799a76c1605f3f4e49a064ec0bf034.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.764ccc25.chunk.css.map": "/static/css/2.764ccc25.chunk.css.map",
-    "static/css/main.272a91b6.chunk.css.map": "/static/css/main.272a91b6.chunk.css.map",
-    "static/media/app.css": "/static/media/bg-fon.228b77a0.jpg",
-    "static/media/filmbg.jpg": "/static/media/filmbg.ad8435df.jpg"
+    "main.css": "/film-react-app/static/css/main.07841be6.chunk.css",
+    "main.js": "/film-react-app/static/js/main.17569dfe.chunk.js",
+    "main.js.map": "/film-react-app/static/js/main.17569dfe.chunk.js.map",
+    "runtime~main.js": "/film-react-app/static/js/runtime~main.c99dd5bd.js",
+    "runtime~main.js.map": "/film-react-app/static/js/runtime~main.c99dd5bd.js.map",
+    "static/css/2.764ccc25.chunk.css": "/film-react-app/static/css/2.764ccc25.chunk.css",
+    "static/js/2.771b1ea6.chunk.js": "/film-react-app/static/js/2.771b1ea6.chunk.js",
+    "static/js/2.771b1ea6.chunk.js.map": "/film-react-app/static/js/2.771b1ea6.chunk.js.map",
+    "index.html": "/film-react-app/index.html",
+    "precache-manifest.b1302f8f7d41bfe89155bcd4458cdbc5.js": "/film-react-app/precache-manifest.b1302f8f7d41bfe89155bcd4458cdbc5.js",
+    "service-worker.js": "/film-react-app/service-worker.js",
+    "static/css/2.764ccc25.chunk.css.map": "/film-react-app/static/css/2.764ccc25.chunk.css.map",
+    "static/css/main.07841be6.chunk.css.map": "/film-react-app/static/css/main.07841be6.chunk.css.map",
+    "static/media/app.css": "/film-react-app/static/media/bg-fon.228b77a0.jpg",
+    "static/media/filmbg.jpg": "/film-react-app/static/media/filmbg.ad8435df.jpg"
   }
 }
