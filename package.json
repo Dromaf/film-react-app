@@ -2,7 +2,7 @@
   "name": "film-project",
   "version": "0.1.0",
   "private": true,
-   "homepage" : "https://dromaf.github.io/film-react-app/"
+  "homepage" : "https://dromaf.github.io/film-react-app/",
   "dependencies": {
     "@material-ui/core": "^4.3.3",
     "@material-ui/icons": "^4.2.1",
